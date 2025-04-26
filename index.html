@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con Bootstrap</title>
+    <link rel="stylesheet" href="C:\ProgramacionWeb\public\bootstrap-5.3.5-dist\css\bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="card text-bg-dark mb-3">
+            <div class="card-header">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="txt_caja_texto" placeholder="name@example.com">
+                    <label for="txt_caja_texto"></label>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-borderless table-dark">
+                    <tr>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-light" onclick="enviarValor(this)" data-valor="7"  value="7" type="button">7</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-light" onclick="enviarValor(this)" data-valor="8" value="8" type="button">8</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-light" onclick="enviarValor(this)" data-valor="9" value="9" type="button">9</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-danger" onclick="enviarValor(this)" data-valor="*"  value="*" type="button">X</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-light" onclick="enviarValor(this)" data-valor="4" value="4" type="button">4</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-light" onclick="enviarValor(this)" data-valor="5" value="5" type="button">5</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-light" onclick="enviarValor(this)" data-valor="6" value="6" type="button">6</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-warning" onclick="enviarValor(this)" data-valor="/"  value="/" type="button">/</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-light" onclick="enviarValor(this)" data-valor="1" value="1" type="button">1</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-light"  onclick="enviarValor(this)" value="2" data-valor="2" type="button">2</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-light" onclick="enviarValor(this)" data-valor="3" value="3" type="button">3</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" onclick="enviarValor(this)" data-valor="-" value="-" type="button">-</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-light" onclick="enviarValor(this)" data-valor="0" value="0"  type="button">0</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-light" onclick="enviarValor(this)" data-valor="." value="." type="button">.</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-success" onclick="enviarValor(this)" data-valor="=" value="=" type="button">=</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-light" onclick="enviarValor(this)" data-valor="+" value="+" type="button">+</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <td>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-light" onclick="limpiar(this)" data-valor="borrar" value="borrar" type="button">C</button>
+                    </div>
+                </td>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="C:\ProgramacionWeb\public\bootstrap-5.3.5-dist\js\bootstrap.bundle.min.js"></script>
+
+    <!--estoy hacieno el llamado a mi archivo calculadora que se encuentra en mi carpeta dis-->
+    <script src="./public/dist/calculadora.js"></script>
+</body>
+</html>
